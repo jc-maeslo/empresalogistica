@@ -1,0 +1,689 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header {
+    width: 100%;
+    position: relative;
+  
+    top: 0;
+    left: 0;
+}
+
+.logo-header img {
+    width: 10rem;
+}
+
+.headerLogisTotal {
+
+    background-color: #050404;
+    
+    padding: .5rem 3rem;
+
+    
+    max-width: 100%;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.lupa input{
+    width: 400px;
+    margin-right: 100px;
+   }
+   .lupa img{
+    width: 40px;
+    margin-right: 600px;
+    margin: auto;
+   }
+#boton { background:url ('img/lupasinfon2')
+
+    no-repeat;
+    background-color: #ccc;
+
+     border:none;
+     width:140px; 
+    height:50px; }
+
+
+/* .search  label{
+    
+    width: 300px;
+    padding: 10px;
+   
+
+    align-items: center; 
+} */
+
+/* BARRA MENU */
+.container__menu {
+    width: 100%;
+    height: 70px;
+    background-color: #0078d7;
+    padding: 0px 20px;
+
+}
+
+.nav_menu {
+    max-width: 100%;
+    margin: auto;
+    height: 100%;
+
+}
+
+.nav_menu>ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_menu>ul>li {
+    height: 100%;
+    margin-right: 10px;
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    color: white
+}
+
+.nav_menu>ul>li:first-child>a {
+    background-image: url(img/casa.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 20px 40px;
+}
+
+.nav_menu>ul>li:first-child:hover>a {
+    background-image: url(img/casa.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+.nav_menu>ul>li>a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    justify-content: space-between;
+    font-size: 14px;
+    transition: all 300ms ease;
+
+
+
+}
+
+.nav_menu>ul>li>a:hover {
+    transform: scale(1.1);
+    background: #0074c7;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+#selected {
+    transform: scale(1.1);
+    background-color: #0074c7;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* SUBMENU */
+.nav_menu ul li ul {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    color: #ccc;
+    top: 90px;
+    left: -5px;
+    padding: 14px 0px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    transition: all 300ms ease;
+}
+
+
+.nav_menu ul li ul:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid white;
+    position: absolute;
+    top: -12px;
+    left: 20px;
+}
+
+.nav_menu ul li ul a{
+    display:block;
+    color:#0099e9;
+    padding:6px;
+    -left:14px;
+    margin-top: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+
+    
+}
+.nav_menu ul li ul a:hover{
+    background: #0074c7;
+    color: #fff;
+    transform: scale(1,1);
+    padding-left: 30px;
+    font-size: 14px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+
+
+}
+
+.nav_menu ul li:hover ul {
+    visibility: visible;
+    opacity: 1;
+    top: 70px;
+}
+/* SUBMENU DE SEGUIMIENTO Y CONTROL DE FLOTA*/
+.subSeguimientoFlota ul li ul {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    color: #ccc;
+    top: 90px;
+    left: -5px;
+    padding: 14px 0px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    transition: all 300ms ease;
+}
+.subSeguimientoFlota ul li ul:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid white;
+    position: absolute;
+    top: -12px;
+    left: 20px;
+}
+.subSeguimientoFlota ul li ul a{
+    display:block;
+    color:#0099e9;
+    padding:6px;
+    -left:14px;
+    margin-top: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+
+    
+}
+.subSeguimientoFlota ul li ul a:hover{
+    background: #0074c7;
+    color: #fff;
+    transform: scale(1,1);
+    padding-left: 30px;
+    font-size: 14px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+
+
+}
+
+.subSeguimientoFlota ul li:hover ul {
+    visibility: visible;
+    opacity: 1;
+    top: 70px;
+}
+ .mainFotosCrm{
+    width: 1000px;
+} 
+.imgFotosCrm img{
+    width: 25rem;
+}
+.imgFotosCrm{
+    display:grid;
+    grid-auto-rows:auto;
+    gap: 1rem;
+  
+
+    grid-template-columns: repeat(auto-fill,minmax(min(100%,15rem),1fr));
+    
+    grid-auto-flow: dense;
+}
+
+
+
+
+.container-cubo {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    perspective: 1000px;
+    background-color: black;
+}
+
+.lado {
+    height: 300px;
+    width: 300px;
+    animation: girar 8s linear infinite;
+    position: absolute;
+    opacity: 0.9;
+    cursor: pointer;
+    /*  background-color: #d42828; */
+}
+
+@keyframes girar {
+    from {
+        transform: rotateY(360deg) translateZ(150px);
+        z-index: 10;
+    }
+
+    50% {
+        z-index: -10;
+    }
+
+    to {
+        transform: rotateY(0) translateZ(150px);
+        z-index: 10;
+    }
+}
+
+#lado_d {
+    background-image: url(img/camion1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#lado_d:hover {
+    -webkit-box-shadow: 0px 0px 43px 0px rgb(152, 96, 17);
+    -moz-box-shadow: 0px 0px 43px 0px rgb(152, 96, 17);
+    box-shadow: 0px 0px 43px 0px rgb(152, 96, 17);
+
+
+}
+
+#lado_c {
+    background-image: url(img/flotadecamiones.jpg);
+    background-size: cover;
+    background-position: center;
+    animation-delay: -2s;
+
+}
+
+#lado_c:hover {
+    -webkit-box-shadow: 0px 0px 43px 0px rgb(226, 217, 210);
+    -moz-box-shadow: 0px 0px 43px 0px rgb(226, 217, 210);
+    box-shadow: 0px 0px 43px 0px rgb(226, 217, 210);
+
+}
+
+
+#lado_b {
+    background-image: url(img/oip.jpeg);
+    background-size: cover;
+    background-position: center;
+    animation-delay: -4s;
+
+}
+
+#lado_b:hover {
+    -webkit-box-shadow: 0px 0px 43px 0px rgb(74, 194, 238);
+    -moz-box-shadow: 0px 0px 43px 0px rgb(74, 194, 238);
+    box-shadow: 0px 0px 43px 0px rgb(74, 194, 238);
+
+}
+
+
+#lado_a {
+    background-image: url(img/transportelogistica.jpg);
+    background-size: cover;
+    background-position: center;
+    animation-delay: -6s;
+
+}
+
+#lado_a:hover {
+    -webkit-box-shadow: 0px 0px 43px 0px rgb(74, 194, 238);
+    -moz-box-shadow: 0px 0px 43px 0px rgb(74, 194, 238);
+    box-shadow: 0px 0px 43px 0px rgb(74, 194, 238);
+
+}
+
+.lado_2 {
+    height: 300px;
+    width: 300px;
+    animation: girar_2 8s linear infinite;
+    position: absolute;
+}
+
+@keyframes girar_2 {
+    from {
+        transform: rotatey(360deg) rotatex(90deg);
+
+        to {
+            transform: rotatey(0deg) rotatex(90deg);
+        }
+    }
+}
+
+#lado_e {
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 300px;
+}
+
+#lado_f {
+    background-color: rgb(0, 0, 0);
+    margin-top: 300px;
+}
+
+
+
+.menu-icon img {
+    width: 30px;
+}
+
+.mainFlota {
+    /*  height:fit-content; */
+    height: 75dvh;
+
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 1em;
+    background-color: #f4f4f4;
+}
+
+
+.headerFlota {
+    background-color: #0078d7;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    padding: .5rem 2rem;
+
+
+
+}
+
+.pFlota {
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+
+}
+
+#map {
+    width: 100%;
+    height: 300px;
+    background-color: #ccc;
+}
+
+
+/* section {
+    margin: 20px 0;
+  } */
+
+
+
+/* container-main {
+    background: #563ad4;
+    margin: auto;
+    padding: 20rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100% 15rem), 1fr));
+    align-content: center;
+    gap: 20px;
+    align-items: center;
+
+    grid-auto-flow: dense;
+    gap: 10px;
+    /*  width: fit-content;
+    height: fit-content; 
+    background-color: #4ad295
+}
+ */
+.footer-1 {
+    height: 5rem;
+    text-align: center;
+
+
+
+    background-color: #d42828;
+}
+
+.footer_2 {
+    height: 5rem;
+    text-align: center;
+
+
+
+    background-color: #6ed2ee;
+}
+
+
+
+
+.nav_menu a:hover {
+    color: #4ad295;
+}
+
+.nav_menu li:last-child {
+    background: #4ad295;
+    border: 2px solid #4ad295;
+    padding: .25rem .75rem;
+    border-radius: .2rem
+}
+
+.nav_menu li:last-child:hover {
+    background-color: transparent;
+    border: 2px solid #4ad295;
+}
+
+.menu-icon img {
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+}
+
+.menu-icon,
+#check {
+    display: none;
+}
+
+
+.formulario-container {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    background-color: aquamarine;
+
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    width: 50%;
+    text-align: center;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+input[type=text], select {
+    width: 100%;
+   /*  padding: 12px 20px; */
+   padding: 10px;
+    /* margin: 8px 0; */
+    margin-bottom: 15px;
+    font-size: 1rem;
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+form button {
+    padding: 12px 30px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color (0.3s ease);
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+/*ELEMENTOS RESPONSIVES*/
+.icon__menu{
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    width: 26px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#label__check{
+    width: 26px;
+    height: 100%;
+    display: none;
+}
+#check__menu{
+    display: none;
+}
+@media screen and  (max-width:768px) {
+    .search input{
+        display: none;
+    }
+    .headerLogisTotal{
+        padding: 10px;
+    }
+    .logo-header img{
+       width:  200px;
+    }
+    .nav_menu >ul{
+       flex-direction: column; 
+       background-color: #2d75c8;
+       position: fixed;
+       left: 0;
+       top: 158px;
+       width: 100%;
+       height: 0px;
+       transition: all 300ms ease;
+       z-index: 100;
+       opacity: 0;
+       visibility: hidden;  
+    }
+    .nav_menu > ul li > a:hover{
+        transform:scale(1) ;
+    }
+    .nav_menu > ul > li > ul{
+        left: 90px;
+    }
+    .nav_menu > ul > li:hover > ul{
+        top: 50px;
+
+    }
+    .nav_menu > ul > li:first-child a{
+        background-position: 20px;
+
+    }
+    #selected{
+        transform: scale(1);
+    }
+    #label__check{
+        display:block;
+    }
+    .icon__menu{
+        display: flex;
+    }
+    #check__menu:checked ~ .nav_menu > ul {
+        height: 300px;
+        opacity: 1;
+        visibility: visible;
+
+       
+    }
+    /*  .checkbtn {
+        display: block;
+    }
+    
+
+    .menu-icon {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .nav_menu ul {
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        background: #222;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+    }
+
+    .nav_menu ul li {
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .nav_menu ul li:last-child {
+        background: none;
+        padding: 1rem;
+    }
+
+    #check:checked~ul {
+        left: 0;
+        transition: all .25s;
+    } */
+
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="headerLogisTotal">
+
+            <div class="logo-header">
+                <img src="img/Transport-Logo-Design-1.jpg" alt="">
+            </div>
+            <search>
+                <form action="https://www.google.com/search" target="_blank">
+                  <label class="lupa">
+                    <img src="img/lupasinfon2.png" alt="magnifier glass icon"> 
+                    <input type="search" name="q" autocomplete="off">
+                     
+                  </label>
+                  <input type="submit" id="boton" value="Enviar"  >
+
+                 <!--  <input type="submit" value="Buscar"> -->
+                </form>
+              </search>
+            <!-- <div class="search">
+                <input type="search" placeholder="¿Qué deseas buscar?">
+            </div> -->
+        </div>
+        <div class="container__menu">
+            <nav class="nav_menu">
+                <input type="chekbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="menu-icon">
+                        <img src="img/menu-desplegable.png" alt=""></i>
+                </label>
+                <ul>
+                    <li><a href="logistotal.html"  id="selected"> </a></li>
+                    <li><a href="quienssomos.html">Conductores</a></li>
+                    <li><a href="servicios.html">Gastos</a>
+                        <ul class="subGastos">
+                            <li><a href="facAlogami.html">Facturas alojamiento</a></li>
+                            <li><a href="facManuten.html">Facturas Manutención</a></li>
+                            <li><a href="facCombustible.html">Facturas conbustibles</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="htmldeseguimientoflota.html">Seguimiento de flota</a></li>
+                    <li><a href="contacto.html">Log In</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+
+    </header>
+    <main id="main-contact">
+        <section>
+            <article>
+                <div class="formulario-container">
+                    <h2>Introduzca sus credenciales</h2>
+                    <form action="#" method="post">
+                        <div class="campo">
+                            <label for="nombre">Usuario:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="campo">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" >
+                            <div class="campo">
+                                <label for="clave">Password:</label>
+                                <input type="password" id="password" name="password" >
+                            </div>
+                        </div>
+                        <div class="campo">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" required></textarea>
+                        </div>
+                        <button class="custom-button" type="submit">Enviar</button>
+                    </form>
+                </div>
+                </article>
+        </section>
+
+
+    </main>
+    <footer></footer>
+
+</body>
+
+</html>
